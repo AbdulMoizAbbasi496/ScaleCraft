@@ -7,10 +7,24 @@ ScaleCraft is an educational System Design Mentor. Upload source files or a ZIP 
 - Express API on port `3000`
 - Next.js API routes for free single-app hosting
 - Lightweight structural code parser that keeps raw source code out of the Gemini prompt
-- Gemini integration using `gemini-1.5-flash`
+- Gemini integration using `gemini-2.5-flash`
 - Next.js + Tailwind dashboard on port `3001`
 - Drag-and-drop source-file and ZIP upload
 - Interactive file tree and side-by-side code guidance
+
+## 🤖 OpenAI Build Week Collaboration & Architecture
+
+### How We Used Codex and GPT-5.5 / GPT-5.6
+I joined the OpenAI Build Week late, missing the July 17 deadline for free Codex credits. To build this within my personal free limits, I adopted a strategic hybrid approach:
+
+1. **Initial Architecture with GPT-5.5:** I started the session using Codex with GPT-5.5 to draw out the basic repository structure, set up the Express backend, and build the React boilerplate. This conserved my agentic usage limits.
+2. **Core Logic with GPT-5.6:** Once the foundation was laid, I switched Codex to GPT-5.6 to build the complex parsing pipeline and the deterministic logic required to extract architectural summaries.
+3. **Web Chat Fallback:** After hitting the combined Codex and Work usage limits for the desktop app, I transitioned to the standard ChatGPT web interface (using GPT-5.5) to debug the final UI components and complete the application.
+
+* **Codex Session ID:** `019f79ee-b2fc-78b0-848b-f79d664d46ab`
+
+### Runtime AI Implementation
+To maintain a completely free application runtime while still showcasing powerful LLM reasoning, the live app orchestrates its architectural evaluations using the Google Gemini API. This demonstrates cross-platform SDK integration and a highly cost-effective evaluation loop.
 
 ## Before your first run
 
