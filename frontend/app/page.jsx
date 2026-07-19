@@ -5,7 +5,7 @@ import FileDropzone from "../components/FileDropzone";
 import FileTree from "../components/FileTree";
 import InsightsPanel from "../components/InsightsPanel";
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:3000";
+const API_URL = process.env.NEXT_PUBLIC_API_URL || "";
 
 export default function HomePage() {
   const [files, setFiles] = useState([]);
